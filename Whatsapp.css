@@ -122,6 +122,13 @@ border-bottom: 1px solid black;
   height: 25px;
 }
 
+.wrapper-right {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .user-info{
 
 display: flex;
@@ -130,4 +137,30 @@ align-items: center;
 height: 50px;
 padding: 10px;
 border-bottom: 1px solid black;
+}
+
+.wrapper-right-container {
+  background-image: url("msg-background.jpg");
+  background-size: cover;
+}
+
+.wrapper-input {
+
+display: flex;
+height: 40px;
+justify-content: center;
+align-items: center;
+border-top: 1px solid black;
+}
+
+#wrapperInput{
+
+  width: 70%;
+  height: 25px;
+}
+
+#wrapperButton {
+
+  width: 30px;
+  height: 25px;
 }
