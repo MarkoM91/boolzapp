@@ -153,9 +153,15 @@ align-items: center;
 border-top: 1px solid black;
 }
 
+.smile{
+
+  margin-right: 25px;
+  font-size: 30px;
+}
+
 #wrapperInput{
 
-  width: 70%;
+  width: 80%;
   height: 25px;
 }
 
