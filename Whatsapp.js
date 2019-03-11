@@ -90,14 +90,9 @@ btn2.click(function() {
 var myTxt = $("#myInput");
 myTxt.keyup();
 
-var wrapperInput = $("#wrapperInput");
+
 var content = $('#content')
 content.click(printMessage);
-
-
-
-
-
 }
 
 
