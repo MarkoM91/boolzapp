@@ -42,6 +42,7 @@ header{
 
 width: 25%;
 border: 1px solid black;
+background-color: rgb(226, 220, 212);
 }
 
 .wrapper-right{
@@ -58,6 +59,7 @@ width: 75%;
   align-items: center;
   border-bottom: 1px solid black;
 }
+
 .contact-info div{
 
   margin: 15px;
@@ -142,6 +144,7 @@ align-items: center;
 height: 50px;
 padding: 10px;
 border-bottom: 1px solid black;
+background-color: rgb(226, 220, 212);
 }
 
 .wrapper-right-container {
@@ -161,6 +164,7 @@ height: 40px;
 justify-content: center;
 align-items: center;
 border-top: 1px solid black;
+background-color: rgb(226, 220, 212);
 }
 
 .smile{
