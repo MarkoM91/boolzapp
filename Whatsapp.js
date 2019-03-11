@@ -20,7 +20,7 @@ wrapper.append(message);
 
 function testAddMessage2() {
 
-var wrapper = $(".wrapper");
+var wrapper = $(".wrap");
 
 var message = document.createElement("div");
 var messageContent = document.createElement("p");
@@ -46,14 +46,14 @@ function txtEnterEvent(e){
 }
 
 function init() {
-var btn1 = $("#myBtn1");
+var btn1 = $("#wrapperButton1");
 btn1.click(function() {
 
   testAddMessage1();
 });
-var btn2 = $("#myBtn2");
+var btn2 = $("#wrapperButton2");
 btn2.click(function() {
-
+console.log("ok");
   testAddMessage2();
 });
 

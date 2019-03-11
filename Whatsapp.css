@@ -165,8 +165,27 @@ border-top: 1px solid black;
   height: 25px;
 }
 
-#wrapperButton {
+#wrapperButton1, #wrapperButton2 {
 
   width: 30px;
   height: 25px;
+}
+
+}
+
+.message{
+  max-height:  200px;
+}
+
+.message.sent{
+
+  background: green;
+    font-size: 30px;
+}
+
+
+.message.received{
+
+  background: purple;
+    font-size: 30px;
 }
