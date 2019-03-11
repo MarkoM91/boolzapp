@@ -226,7 +226,7 @@ background-color: rgb(226, 220, 212);
   height: 25px;
 }
 
-#wrapperButton1, #wrapperButton2 {
+#wrapperButton1, #wrapperButton2, #content {
 
   width: 30px;
   height: 25px;

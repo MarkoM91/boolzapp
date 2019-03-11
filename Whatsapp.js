@@ -49,6 +49,32 @@ function txtEnterEvent(e){
   }
 }
 
+function printMessage() {
+var wrapperInput = $("#wrapperInput");
+ var input = wrapperInput.val();
+
+ var wrapper = $(".wrap");
+
+ var message = document.createElement("div");
+ var messageDetail = document.createElement("small");
+ var messageHour = document.createElement("h6");
+
+ $(message).addClass("message");
+ $(message).addClass("sent");
+
+
+ $(messageDetail).text(input);
+ $(messageHour).text("17:30");
+
+
+ message.append(messageDetail);
+ message.append(messageHour);
+
+ wrapper.append(message);
+
+
+}
+
 function init() {
 var btn1 = $("#wrapperButton1");
 btn1.click(function() {
@@ -63,6 +89,14 @@ btn2.click(function() {
 
 var myTxt = $("#myInput");
 myTxt.keyup();
+
+var wrapperInput = $("#wrapperInput");
+var content = $('#content')
+content.click(printMessage);
+
+
+
+
 
 }
 
