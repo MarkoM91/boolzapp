@@ -171,21 +171,30 @@ border-top: 1px solid black;
   height: 25px;
 }
 
+.wrap {
+
+  display: flex;
+  flex-direction: column;
+}
+
 }
 
 .message{
   max-height:  200px;
+
 }
 
 .message.sent{
 
-  background: green;
+  background: rgb(209, 247, 153);
     font-size: 30px;
+    border: 1px solid black;
 }
 
 
 .message.received{
 
-  background: purple;
+  background: white;
     font-size: 30px;
+    border: 1px solid black;
 }
