@@ -62,14 +62,24 @@ border: 1px solid rgb(164, 164, 164);
   border-bottom: 1px solid rgb(164, 164, 164);
   text-align: left;
 }
-.txt{
-  text-align: left;
+
+#r{
+
+position: relative;
+right: 15px;
+}
+
+#rr{
+
+position: relative;
+right: 10px;
 }
 
 .contact-info div{
 
   margin: 15px;
 }
+
 .contact-info img{
 
 width: 30px;
@@ -89,15 +99,18 @@ border-radius: 50%;
 display: flex;
 justify-content: flex-end;
 }
+
 .icons i {
 
 margin: 0 4px;
 }
+
 .icons1  {
 
 display: flex;
 justify-content: flex-end;
 }
+
 .icons1 i {
 
 margin: 0 4px;
@@ -112,6 +125,7 @@ margin: 0 4px;
   justify-content: center;
   align-items: center;
 }
+
 .status div{
 
   margin: 10px;
@@ -232,7 +246,6 @@ background-color: rgb(226, 220, 212);
     position: relative;
     left: 358px;
     padding-right: 20px;
-
 }
 
 
@@ -244,6 +257,7 @@ background-color: rgb(226, 220, 212);
 }
 
 .message h6 {
+
   position: absolute;
   bottom: 0;
   right: 0;
