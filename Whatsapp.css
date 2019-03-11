@@ -142,6 +142,8 @@ border-bottom: 1px solid black;
 .wrapper-right-container {
   background-image: url("msg-background.jpg");
   background-size: cover;
+  overflow-x: scroll;
+
 }
 
 .wrapper-input {
@@ -151,6 +153,8 @@ height: 40px;
 justify-content: center;
 align-items: center;
 border-top: 1px solid black;
+
+
 }
 
 .smile{
@@ -175,6 +179,7 @@ border-top: 1px solid black;
 
   display: flex;
   flex-direction: column;
+
 }
 
 }
@@ -193,7 +198,7 @@ border-top: 1px solid black;
     border: 1px solid black;
     width: 50%;
     position: relative;
-    left: 360px;
+    left: 358px;
 
 
 }
