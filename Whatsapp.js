@@ -5,15 +5,18 @@ var wrapper = $(".wrap");
 var message = document.createElement("div");
 var messageContent = document.createElement("p");
 var messageDetail = document.createElement("small");
+var messageHour = document.createElement("h6");
 
 $(message).addClass("message");
 $(message).addClass("sent");
 
 $(messageContent).text("messagio dinamico");
 $(messageDetail).text("dettagli messaggio dinamico");
+$(messageHour).text("17:30");
 
 message.append(messageContent);
 message.append(messageDetail);
+message.append(messageHour);
 
 wrapper.append(message);
 }
@@ -25,15 +28,18 @@ var wrapper = $(".wrap");
 var message = document.createElement("div");
 var messageContent = document.createElement("p");
 var messageDetail = document.createElement("small");
+var messageHour = document.createElement("h6");
 
 $(message).addClass("message");
 $(message).addClass("received");
 
 $(messageContent).text("messagio dinamico");
 $(messageDetail).text("dettagli messaggio dinamico");
+$(messageHour).text("17:30");
 
 message.append(messageContent);
 message.append(messageDetail);
+message.append(messageHour);
 
 wrapper.append(message);
 }
