@@ -16,6 +16,7 @@ body{
   height: 100vh;
   background: rgb(209, 210, 200);
   margin: auto;
+  color: rgb(109, 114, 117);
 }
 
 header{
@@ -153,9 +154,10 @@ border-bottom: 1px solid rgb(164, 164, 164);
 display: flex;
 justify-content: space-between;
 align-items: center;
-height: 50px;
+height: 55px;
 padding: 10px;
 background-color: rgb(226, 220, 212);
+border-bottom: 1px solid rgb(164, 164, 164);
 }
 
 .wrapper-right-container {
