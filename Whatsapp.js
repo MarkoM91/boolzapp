@@ -3,18 +3,17 @@ function testAddMessage1() {
 var wrapper = $(".wrap");
 
 var message = document.createElement("div");
-var messageContent = document.createElement("p");
 var messageDetail = document.createElement("small");
 var messageHour = document.createElement("h6");
 
 $(message).addClass("message");
 $(message).addClass("sent");
 
-$(messageContent).text("messagio dinamico");
-$(messageDetail).text("dettagli messaggio dinamico");
+
+$(messageDetail).text("Ogni anno l’economia mondiale consuma quasi 93 miliardi di tonnellate di materie prime tra minerali, combustibili fossili, metalli e biomassa.")
 $(messageHour).text("17:30");
 
-message.append(messageContent);
+
 message.append(messageDetail);
 message.append(messageHour);
 
@@ -26,18 +25,17 @@ function testAddMessage2() {
 var wrapper = $(".wrap");
 
 var message = document.createElement("div");
-var messageContent = document.createElement("p");
 var messageDetail = document.createElement("small");
 var messageHour = document.createElement("h6");
 
 $(message).addClass("message");
 $(message).addClass("received");
 
-$(messageContent).text("messagio dinamico");
-$(messageDetail).text("dettagli messaggio dinamico");
+
+$(messageDetail).text("ok interessante.");
 $(messageHour).text("17:30");
 
-message.append(messageContent);
+
 message.append(messageDetail);
 message.append(messageHour);
 
@@ -59,7 +57,7 @@ btn1.click(function() {
 });
 var btn2 = $("#wrapperButton2");
 btn2.click(function() {
-console.log("ok");
+
   testAddMessage2();
 });
 
