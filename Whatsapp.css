@@ -63,6 +63,14 @@ border: 1px solid rgb(164, 164, 164);
   text-align: left;
 }
 
+h5 {
+  color: black;
+}
+
+.status-txt {
+  color: black;
+}
+
 #r{
 
 position: relative;
@@ -246,6 +254,7 @@ background-color: rgb(226, 220, 212);
     position: relative;
     left: 358px;
     padding-right: 20px;
+    border: 1px solid rgb(164, 164, 164);
 }
 
 
@@ -254,6 +263,7 @@ background-color: rgb(226, 220, 212);
     background: white;
     font-size: 30px;
     width: 40%;
+    border: 1px solid rgb(164, 164, 164);
 }
 
 .message h6 {
