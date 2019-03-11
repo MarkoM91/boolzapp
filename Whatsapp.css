@@ -52,7 +52,8 @@ width: 75%;
   height: 50px;
   width: 100%;
   display: flex;
-  text-align: center;
+  justify-content: space-between;
+  align-items: center;
   border-bottom: 1px solid black;
 }
 .contact-info div{
@@ -125,4 +126,8 @@ border-bottom: 1px solid black;
 
 display: flex;
 justify-content: space-between;
+align-items: center;
+height: 50px;
+padding: 10px;
+border-bottom: 1px solid black;
 }
