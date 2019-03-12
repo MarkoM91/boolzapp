@@ -256,6 +256,7 @@ background-color: rgb(226, 220, 212);
     padding: 10px;
     border: 1px solid rgb(164, 164, 164);
     margin-bottom: 30px;
+    border: 5px;
 }
 
 
@@ -268,6 +269,7 @@ background-color: rgb(226, 220, 212);
     margin-left: 20px;
     padding: 10px;
     margin-bottom: 30px;
+    border-radius: 5px;
 }
 
 .message h6 {
