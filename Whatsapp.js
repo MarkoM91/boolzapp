@@ -57,7 +57,7 @@ var messageDetail = document.createElement("small");
 var messageHour = document.createElement("h6");
 
 $(message).addClass("message");
-$(message).addClass("received");
+$(message).addClass("sent");
 
 
 $(messageDetail).text(content);
