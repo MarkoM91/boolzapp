@@ -44,7 +44,7 @@ $(message).addClass("message");
 $(message).addClass("received");
 
 
-$(messageDetail).text(content);
+$(messageDetail).text("ok");
 $(messageHour).text("17:30");
 
 
