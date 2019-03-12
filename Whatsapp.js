@@ -1,4 +1,26 @@
+function search() {
 
+var me = $(this);
+var content = me.val();
+
+var contactInfo = $(".contact-info");
+  contactInfo.removeClass("hidden");
+  var txt = $(".txt > h5");
+  console.log(contactInfo);
+ for (var i = 0; i < contactInfo.length; i++) {
+
+   var contactInfolength = contactInfo.eq(i);
+
+   var contactInfoContent = txt.eq(i).text();
+   console.log(contactInfoContent);
+
+    if (!contactInfoContent.includes(content)) {
+
+    contactInfolength.addClass("hidden");
+        }
+ }
+
+}
 
 
 
@@ -8,6 +30,7 @@ function txtEnterEvent(e){
    testAddMessage2();
   }
 }
+
 function getMessageGreen(content) {
 
 var wrapper = $(".wrap");
@@ -68,9 +91,6 @@ var activeMessageContainer = $(".wrapper-right-container");
 
    var htmlMsg = getMessageGreen(input);
 
-
-
-
    activeMessageContainer.append(htmlMsg);
 
    setTimeout(getMessageWhite, 1000);
@@ -81,15 +101,23 @@ var activeMessageContainer = $(".wrapper-right-container");
 function init() {
 
 
-var myTxt = $("#myInput");
-myTxt.keyup();
+
 
 
 var input = $('#wrapperInput');
 input.keyup(messagePrinter);
 
 
+
+var input1 = $("input#myInput");
+input1.keyup(search);
 }
+
+
+
+
+
+
 
 
 $(document).ready(init);
