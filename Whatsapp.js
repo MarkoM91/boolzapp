@@ -1,3 +1,16 @@
+function conversation() {
+
+
+
+  var wrapperright2 = $(".wrapper-right2");
+  var wrapperright = $(".wrapper-right");
+
+wrapperright2.show();
+wrapperright2.hide();
+
+
+}
+
 function search() {
 
     var me = $(this);
@@ -15,10 +28,10 @@ function search() {
        var contactInfoContent = txt.eq(i).text();
 
 
-        if (!contactInfoContent.includes(content)) {
+       if (!contactInfoContent.includes(content)) {
 
           contactInfolength.addClass("hidden");
-        }
+       }
     }
 
 }
@@ -38,6 +51,7 @@ function getMessageGreen(content) {
 
     var message = document.createElement("div");
     var messageDetail = document.createElement("small");
+    var message
     var messageHour = document.createElement("h6");
 
     $(message).addClass("message");
@@ -97,28 +111,35 @@ function messagePrinter(e){
         setTimeout(getMessageWhite, 1000);
   }
 }
+function messagePrinter1(e){
+    var me = $(this);
+    var activeMessageContainer = $(".wrapper-right-container");
+
+     if (e.which == 13) {
+
+        var input = me.val();
+        me.val("");
+
+        var htmlMsg = getMessageGreen(input);
+
+        activeMessageContainer.append(htmlMsg);
+
+        setTimeout(getMessageWhite, 1000);
+  }
+}
 
 
 function init() {
 
-
-
-
-
     var input = $('#wrapperInput');
     input.keyup(messagePrinter);
 
-
-
     var input1 = $("input#myInput");
     input1.keyup(search);
+
+    var contactInfo = $(".contact-info");
+
+    contactInfo.click(conversation);
 }
-
-
-
-
-
-
-
 
 $(document).ready(init);
