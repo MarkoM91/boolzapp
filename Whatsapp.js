@@ -48,6 +48,20 @@ function txtEnterEvent(e){
    testAddMessage2();
   }
 }
+function messageprinter(e){
+var me = $(this);
+var activeMessageContainer = $(".wrapper-right-container");
+
+  if (e.which == 13) {
+
+   var input = me.val();
+   me.val("");
+
+   var htmlMsg = getMessage(input);
+
+   activeMessageContainer.append()
+  }
+}
 
 function printMessage() {
 var wrapperInput = $("#wrapperInput");
@@ -91,8 +105,8 @@ var myTxt = $("#myInput");
 myTxt.keyup();
 
 
-var content = $('#content')
-content.click(printMessage);
+var input = $('#wrapperInput');
+input.keyup(printMessage);
 }
 
 
