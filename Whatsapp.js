@@ -48,7 +48,30 @@ function txtEnterEvent(e){
    testAddMessage2();
   }
 }
-function messageprinter(e){
+function getMessage(content) {
+
+var wrapper = $(".wrap");
+
+var message = document.createElement("div");
+var messageDetail = document.createElement("small");
+var messageHour = document.createElement("h6");
+
+$(message).addClass("message");
+$(message).addClass("received");
+
+
+$(messageDetail).text(content);
+$(messageHour).text("17:30");
+
+
+message.append(messageDetail);
+message.append(messageHour);
+
+wrapper.append(message);
+}
+
+
+function messagePrinter(e){
 var me = $(this);
 var activeMessageContainer = $(".wrapper-right-container");
 
@@ -59,35 +82,10 @@ var activeMessageContainer = $(".wrapper-right-container");
 
    var htmlMsg = getMessage(input);
 
-   activeMessageContainer.append()
+   activeMessageContainer.append(htmlMsg);
   }
 }
 
-function printMessage() {
-var wrapperInput = $("#wrapperInput");
- var input = wrapperInput.val();
-
- var wrapper = $(".wrap");
-
- var message = document.createElement("div");
- var messageDetail = document.createElement("small");
- var messageHour = document.createElement("h6");
-
- $(message).addClass("message");
- $(message).addClass("sent");
-
-
- $(messageDetail).text(input);
- $(messageHour).text("17:30");
-
-
- message.append(messageDetail);
- message.append(messageHour);
-
- wrapper.append(message);
-
-
-}
 
 function init() {
 var btn1 = $("#wrapperButton1");
@@ -106,7 +104,7 @@ myTxt.keyup();
 
 
 var input = $('#wrapperInput');
-input.keyup(printMessage);
+input.keyup(messagePrinter);
 }
 
 
