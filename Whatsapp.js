@@ -103,12 +103,18 @@ function messagePrinter(e){
      }
 }
 
+function rowCanc() {
+
+  var me = $(this);
+
+
+  me.remove();
+
+
+}
+
 
 function init() {
-
-
-
-
 
     var input = $('#wrapperInput');
     input.keyup(messagePrinter);
@@ -120,6 +126,10 @@ function init() {
 
     var contactInfo = $(".contact-info");
     contactInfo.click(selectWrapper);
+
+    var message = $(".message")
+
+    $(document).on("click" , ".message", rowCanc);
 }
 
 
