@@ -2,6 +2,7 @@ function selectWrapper() {
 
   var me = $(this);
   meIndex = me.index();
+  console.log(meIndex);
 
   var wrapperRight = $('.wrapper-right');
   wrapperRight.removeClass("selected");

@@ -41,9 +41,10 @@ header{
 
 .wrapper-left {
 
-width: 25%;
-background-color: rgb(226, 220, 212);
-border: 1px solid rgb(164, 164, 164);
+  width: 25%;
+
+  background-color: rgb(226, 220, 212);
+  border: 1px solid rgb(164, 164, 164);
 }
 
 
@@ -52,41 +53,48 @@ border: 1px solid rgb(164, 164, 164);
 
   height: 50px;
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   border-bottom: 1px solid rgb(164, 164, 164);
   text-align: left;
 }
+
 .contact-infofirst{
 
   height: 50px;
   width: 100%;
+
   display: flex;
   justify-content: space-between;
   align-items: center;
+
   border-bottom: 1px solid rgb(164, 164, 164);
   text-align: left;
 }
 
 h5 {
+
   color: black;
 }
 
 .status-txt {
+
   color: black;
 }
 
 #r{
 
-position: relative;
-right: 15px;
+  position: relative;
+  right: 15px;
 }
 
 #rr{
 
-position: relative;
-right: 10px;
+  position: relative;
+  right: 10px;
 }
 
 .contact-info div{
@@ -100,51 +108,71 @@ right: 10px;
 
 .contact-info img{
 
-width: 30px;
-height: 30px;
-border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 .contact-infofirst img{
 
-width: 30px;
-height: 30px;
-border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
 }
 
 .user-info img{
 
-width: 40px;
-height: 40px;
-border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-info1 img{
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-info2 img{
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.user-info3 img{
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .icons  {
 
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icons i {
 
-margin: 0 4px;
+  margin: 0 4px;
 }
 
 .icons1  {
 
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icons1 i {
 
-margin: 0 4px;
+  margin: 0 4px;
 }
 
 .status{
 
   height: 50px;
   width: 100%;;
+
   background: rgb(168, 217, 250);
+
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,6 +188,7 @@ div.s-icon{
 
   height:30px;
   width: 30px;
+
   background: white;
   text-align: center;
   border-radius: 50%;
@@ -174,11 +203,13 @@ div.s-icon{
 
 .input {
 
-display: flex;
-height: 40px;
-justify-content: center;
-align-items: center;
-border-bottom: 1px solid rgb(164, 164, 164);
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-bottom: 1px solid rgb(164, 164, 164);
 }
 
 #myInput {
@@ -197,6 +228,7 @@ border-bottom: 1px solid rgb(164, 164, 164);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
   background-image:  url("msg-background.jpg");
   width: 75%;
   border: 1px solid rgb(164, 164, 164);
@@ -210,23 +242,44 @@ border-bottom: 1px solid rgb(164, 164, 164);
 
 .user-info{
 
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 55px;
-padding: 10px;
-background-color: rgb(226, 220, 212);
-border-bottom: 1px solid rgb(164, 164, 164);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  background-color: rgb(226, 220, 212);
+  border-bottom: 1px solid rgb(164, 164, 164);
 }
 .user-info1{
 
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 55px;
-padding: 10px;
-background-color: rgb(226, 220, 212);
-border-bottom: 1px solid rgb(164, 164, 164);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding: 10px;
+  background-color: rgb(226, 220, 212);
+  border-bottom: 1px solid rgb(164, 164, 164);
+}
+.user-info2{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 55px;
+  padding: 10px;
+  background-color: rgb(226, 220, 212);
+  border-bottom: 1px solid rgb(164, 164, 164);
+}
+.user-info3{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  height: 55px;
+  padding: 10px;
+  background-color: rgb(226, 220, 212);
+  border-bottom: 1px solid rgb(164, 164, 164);
 }
 
 .wrapper-right-container {
@@ -238,7 +291,28 @@ border-bottom: 1px solid rgb(164, 164, 164);
   width : 100%;
   overflow-x: scroll;
 }
+
 .wrapper-right-container1 {
+
+  background: url("msg-background.jpg");
+  background-size: cover;
+
+  height: 100%;
+  width : 100%;
+  overflow-x: scroll;
+}
+
+.wrapper-right-container2 {
+
+  background: url("msg-background.jpg");
+  background-size: cover;
+
+  height: 100%;
+  width : 100%;
+  overflow-x: scroll;
+}
+
+.wrapper-right-container3 {
 
   background: url("msg-background.jpg");
   background-size: cover;
@@ -250,19 +324,45 @@ border-bottom: 1px solid rgb(164, 164, 164);
 
 .wrapper-input {
 
-display: flex;
-height: 40px;
-justify-content: center;
-align-items: center;
-background-color: rgb(226, 220, 212);
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(226, 220, 212);
 }
+
 .wrapper-input1 {
 
-display: flex;
-height: 40px;
-justify-content: center;
-align-items: center;
-background-color: rgb(226, 220, 212);
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(226, 220, 212);
+}
+
+.wrapper-input2 {
+
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(226, 220, 212);
+}
+.wrapper-input3 {
+
+  height: 40px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: rgb(226, 220, 212);
 }
 
 .smile{
@@ -276,12 +376,22 @@ background-color: rgb(226, 220, 212);
   width: 80%;
   height: 25px;
 }
-
 #wrapperInput1{
 
   width: 80%;
   height: 25px;
 }
+#wrapperInput2{
+
+  width: 80%;
+  height: 25px;
+}
+#wrapperInput3{
+
+  width: 80%;
+  height: 25px;
+}
+
 
 
 
@@ -291,6 +401,16 @@ background-color: rgb(226, 220, 212);
   flex-direction: column;
 }
 .wrap1 {
+
+  display: flex;
+  flex-direction: column;
+}
+.wrap2 {
+
+  display: flex;
+  flex-direction: column;
+}
+.wrap3 {
 
   display: flex;
   flex-direction: column;
@@ -307,14 +427,14 @@ background-color: rgb(226, 220, 212);
 .message.sent{
 
   background: rgb(209, 247, 153);
-    font-size: 30px;
-    width: 40%;
-    position: relative;
-    left: 358px;
-    padding: 10px;
-    border: 1px solid rgb(164, 164, 164);
-    margin-bottom: 30px;
-    border: 5px;
+  font-size: 30px;
+  width: 40%;
+  position: relative;
+  left: 358px;
+  padding: 10px;
+  border: 1px solid rgb(164, 164, 164);
+  margin-bottom: 30px;
+  border: 5px;
 }
 
 
@@ -350,6 +470,56 @@ background-color: rgb(226, 220, 212);
 
 
 .message.received1 {
+
+    background: white;
+    font-size: 30px;
+    width: 40%;
+    border: 1px solid rgb(164, 164, 164);
+    margin-left: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.message.sent2 {
+
+  background: rgb(209, 247, 153);
+    font-size: 30px;
+    width: 40%;
+    position: relative;
+    left: 358px;
+    padding: 10px;
+    border: 1px solid rgb(164, 164, 164);
+    margin-bottom: 30px;
+    border: 5px;
+}
+
+
+.message.received2 {
+
+    background: white;
+    font-size: 30px;
+    width: 40%;
+    border: 1px solid rgb(164, 164, 164);
+    margin-left: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.message.sent3 {
+
+  background: rgb(209, 247, 153);
+    font-size: 30px;
+    width: 40%;
+    position: relative;
+    left: 358px;
+    padding: 10px;
+    border: 1px solid rgb(164, 164, 164);
+    margin-bottom: 30px;
+    border: 5px;
+}
+
+
+.message.received3 {
 
     background: white;
     font-size: 30px;
