@@ -1,9 +1,15 @@
-function selectedWrapper() {
+function selectWrapper() {
 
   var me = $(this);
   meIndex = me.index();
 
-  
+  var wrapperRight = $('.wrapper-right');
+  wrapperRight.removeClass("selected");
+
+  var selectedWrapper = wrapperRight.eq(meIndex);
+  $(selectedWrapper).addClass("selected");
+
+
 }
 
 
@@ -123,6 +129,9 @@ function init() {
 
     var input1 = $("input#myInput");
     input1.keyup(search);
+
+    var contactInfo = $(".contact-info");
+    contactInfo.click(selectWrapper);
 }
 
 

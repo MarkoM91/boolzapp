@@ -200,10 +200,25 @@ border-bottom: 1px solid rgb(164, 164, 164);
   background-image:  url("msg-background.jpg");
   width: 75%;
   border: 1px solid rgb(164, 164, 164);
-  
+  display: none;
+}
+
+.selected {
+
+  display: block;
 }
 
 .user-info{
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+height: 55px;
+padding: 10px;
+background-color: rgb(226, 220, 212);
+border-bottom: 1px solid rgb(164, 164, 164);
+}
+.user-info1{
 
 display: flex;
 justify-content: space-between;
@@ -223,8 +238,25 @@ border-bottom: 1px solid rgb(164, 164, 164);
   width : 100%;
   overflow-x: scroll;
 }
+.wrapper-right-container1 {
+
+  background: url("msg-background.jpg");
+  background-size: cover;
+
+  height: 100%;
+  width : 100%;
+  overflow-x: scroll;
+}
 
 .wrapper-input {
+
+display: flex;
+height: 40px;
+justify-content: center;
+align-items: center;
+background-color: rgb(226, 220, 212);
+}
+.wrapper-input1 {
 
 display: flex;
 height: 40px;
@@ -245,13 +277,20 @@ background-color: rgb(226, 220, 212);
   height: 25px;
 }
 
-#wrapperButton1, #wrapperButton2, #content {
+#wrapperInput1{
 
-  width: 30px;
+  width: 80%;
   height: 25px;
 }
 
+
+
 .wrap {
+
+  display: flex;
+  flex-direction: column;
+}
+.wrap1 {
 
   display: flex;
   flex-direction: column;
@@ -280,6 +319,37 @@ background-color: rgb(226, 220, 212);
 
 
 .message.received{
+
+    background: white;
+    font-size: 30px;
+    width: 40%;
+    border: 1px solid rgb(164, 164, 164);
+    margin-left: 20px;
+    padding: 10px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+.message {
+
+
+  position: relative;
+}
+
+.message.sent1 {
+
+  background: rgb(209, 247, 153);
+    font-size: 30px;
+    width: 40%;
+    position: relative;
+    left: 358px;
+    padding: 10px;
+    border: 1px solid rgb(164, 164, 164);
+    margin-bottom: 30px;
+    border: 5px;
+}
+
+
+.message.received1 {
 
     background: white;
     font-size: 30px;
