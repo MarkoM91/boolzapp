@@ -1,16 +1,16 @@
-* {
+*{
 
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
+body{
 
   background: black;
 }
 
-.container {
+.container{
 
   width: 90vw;
   height: 100vh;
@@ -19,7 +19,7 @@ body {
   color: rgb(109, 114, 117);
 }
 
-header {
+header{
 
   position: fixed;
   background: rgb(88, 132, 117);
@@ -27,7 +27,7 @@ header {
   width: 90vw;
 }
 
-.wrapper {
+.wrapper{
 
   height: 95%;
   width: 70%;
@@ -46,13 +46,13 @@ background-color: rgb(226, 220, 212);
 border: 1px solid rgb(164, 164, 164);
 }
 
-.wrapper-right {
+.wrapper-right{
 
 width: 75%;
 border: 1px solid rgb(164, 164, 164);
 }
 
-.contact-info {
+.contact-info{
 
   height: 50px;
   width: 100%;
@@ -62,7 +62,7 @@ border: 1px solid rgb(164, 164, 164);
   border-bottom: 1px solid rgb(164, 164, 164);
   text-align: left;
 }
-.contact-infofirst {
+.contact-infofirst{
 
   height: 50px;
   width: 100%;
@@ -81,41 +81,41 @@ h5 {
   color: black;
 }
 
-#r {
+#r{
 
 position: relative;
 right: 15px;
 }
 
-#rr {
+#rr{
 
 position: relative;
 right: 10px;
 }
 
-.contact-info div {
+.contact-info div{
 
   margin: 15px;
 }
-.contact-infofirst div {
+.contact-infofirst div{
 
   margin: 15px;
 }
 
-.contact-info img {
+.contact-info img{
 
 width: 30px;
 height: 30px;
 border-radius: 50%;
 }
-.contact-infofirst img {
+.contact-infofirst img{
 
 width: 30px;
 height: 30px;
 border-radius: 50%;
 }
 
-.user-info img {
+.user-info img{
 
 width: 40px;
 height: 40px;
@@ -144,7 +144,7 @@ justify-content: flex-end;
 margin: 0 4px;
 }
 
-.status {
+.status{
 
   height: 50px;
   width: 100%;;
@@ -154,13 +154,13 @@ margin: 0 4px;
   align-items: center;
 }
 
-.status div {
+.status div{
 
   margin: 10px;
   font-size: 12px;
 }
 
-div.s-icon {
+div.s-icon{
 
   height:30px;
   width: 30px;
@@ -170,7 +170,7 @@ div.s-icon {
 
 }
 
-.fa-bell-slash {
+.fa-bell-slash{
   text-align: center;
   color: rgb(168, 217, 250);
   margin: 8px;
@@ -203,24 +203,8 @@ border-bottom: 1px solid rgb(164, 164, 164);
   justify-content: space-between;
   background-image:  url("msg-background.jpg");
 }
-.wrapper-right2 {
 
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image:  url("msg-background.jpg");
-  display:none;
-}
-.wrapper-right3 {
-
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-image:  url("msg-background.jpg");
-  display: none;
-}
-
-.user-info {
+.user-info{
 
 display: flex;
 justify-content: space-between;
@@ -250,22 +234,13 @@ align-items: center;
 background-color: rgb(226, 220, 212);
 }
 
-.smile {
+.smile{
 
   margin-right: 25px;
-  font-size: 28px;
-}
-.microphone {
-
-  margin-right: 25px;
-  font-size: 28px;
-}
-.microphone i {
-
-padding-left: 25px;
+  font-size: 30px;
 }
 
-#wrapperInput {
+#wrapperInput{
 
   width: 80%;
   height: 25px;
@@ -291,7 +266,7 @@ padding-left: 25px;
   position: relative;
 }
 
-.message.sent {
+.message.sent{
 
   background: rgb(209, 247, 153);
     font-size: 30px;
@@ -305,7 +280,7 @@ padding-left: 25px;
 }
 
 
-.message.received {
+.message.received{
 
     background: white;
     font-size: 30px;
