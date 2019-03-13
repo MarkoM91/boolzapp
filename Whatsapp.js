@@ -1,3 +1,14 @@
+function selectedWrapper() {
+
+  var me = $(this);
+  meIndex = me.index();
+
+  
+}
+
+
+
+
 function search() {
 
     var me = $(this);

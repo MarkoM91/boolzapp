@@ -46,11 +46,7 @@ background-color: rgb(226, 220, 212);
 border: 1px solid rgb(164, 164, 164);
 }
 
-.wrapper-right{
 
-width: 75%;
-border: 1px solid rgb(164, 164, 164);
-}
 
 .contact-info{
 
@@ -202,6 +198,9 @@ border-bottom: 1px solid rgb(164, 164, 164);
   flex-direction: column;
   justify-content: space-between;
   background-image:  url("msg-background.jpg");
+  width: 75%;
+  border: 1px solid rgb(164, 164, 164);
+  
 }
 
 .user-info{
