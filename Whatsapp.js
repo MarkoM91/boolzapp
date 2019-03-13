@@ -19,7 +19,7 @@ function selectWrapper() {
 function search() {
 
     var me = $(this);
-    var content = me.val();
+    var content = me.val().toLowerCase();
 
     var contactInfo = $(".contact-info");
     contactInfo.removeClass("hidden");
@@ -30,7 +30,7 @@ function search() {
 
        var contactInfolength = contactInfo.eq(i);
 
-       var contactInfoContent = txt.eq(i).text();
+       var contactInfoContent = txt.eq(i).text().toLowerCase();
 
 
         if (!contactInfoContent.includes(content)) {
@@ -100,7 +100,7 @@ function messagePrinter(e){
           activeMessageContainer.append(htmlMsg);
 
         }, 1000);
-  }
+     }
 }
 
 
