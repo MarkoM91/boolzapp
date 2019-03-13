@@ -50,53 +50,36 @@ function txtEnterEvent(e){
     }
 }
 
-function getMessageGreen(content) {
+function getMessageGreen(sent ,content) {
 
     var wrapper = $(".wrap");
 
     var message = document.createElement("div");
     var messageDetail = document.createElement("small");
     var messageHour = document.createElement("h6");
-
-    $(message).addClass("message");
-    $(message).addClass("sent");
-
 
     $(messageDetail).text(content);
     $(messageHour).text("17:30");
 
-
     message.append(messageDetail);
     message.append(messageHour);
-
-    wrapper.append(message);
-
-return wrapper;
-}
-
-function getMessageWhite(content) {
-
-    var wrapper = $(".wrap");
-
-    var message = document.createElement("div");
-    var messageDetail = document.createElement("small");
-    var messageHour = document.createElement("h6");
 
     $(message).addClass("message");
-    $(message).addClass("received");
 
+    if (sent) {
 
-    $(messageDetail).text("ok");
-    $(messageHour).text("17:30");
+      $(message).addClass("sent");
+    } else {
 
+      $(message).addClass("received");
+    }
 
-    message.append(messageDetail);
-    message.append(messageHour);
-
-    wrapper.append(message);
+  wrapper.append(message);
 
 return wrapper;
 }
+
+
 
 
 function messagePrinter(e){
@@ -108,11 +91,15 @@ function messagePrinter(e){
         var input = me.val();
         me.val("");
 
-        var htmlMsg = getMessageGreen(input);
-
+        var htmlMsg = getMessageGreen(true, input);
         activeMessageContainer.append(htmlMsg);
 
-        setTimeout(getMessageWhite, 1000);
+        setTimeout(function() {
+
+          htmlMsg = getMessageGreen(false, "ok");
+          activeMessageContainer.append(htmlMsg);
+
+        }, 1000);
   }
 }
 
