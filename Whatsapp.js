@@ -122,7 +122,7 @@ function messagePrinter(e){
         me.val("");
 
         var htmlMsg = getMessageGreen(true, input);
-        activeMessageContainer.append(htmlMsg);
+        activeMessageContainer.eq().append(htmlMsg);
 
         setTimeout(function() {
 
@@ -133,26 +133,7 @@ function messagePrinter(e){
      }
 }
 
-function messagePrinter1(e){
-    var me = $(this);
-    var activeMessageContainer = $(".wrapper-right-container1");
 
-     if (e.which == 13) {
-
-        var input = me.val();
-        me.val("");
-
-        var htmlMsg = getMessageGreen1(true, input);
-        activeMessageContainer.append(htmlMsg);
-
-        setTimeout(function() {
-
-          htmlMsg = getMessageGreen1(false, "ok");
-          activeMessageContainer.append(htmlMsg);
-
-        }, 1000);
-     }
-}
 
 function rowCanc() {
 
@@ -170,8 +151,7 @@ function init() {
     var input = $('#wrapperInput');
     input.keyup(messagePrinter);
 
-    var input1 = $('#wrapperInput1');
-    input1.keyup(messagePrinter1);
+
 
 
 
