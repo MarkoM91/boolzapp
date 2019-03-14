@@ -14,9 +14,6 @@ function selectWrapper() {
 
 }
 
-
-
-
 function search() {
 
     var me = $(this);

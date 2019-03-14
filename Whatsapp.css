@@ -230,17 +230,9 @@ border-bottom: 1px solid rgb(164, 164, 164);
   width : 100%;
   overflow-x: scroll;
 }
-.wrapper-right-container1 {
 
-  background: url("msg-background.jpg");
-  background-size: cover;
 
-  height: 100%;
-  width : 100%;
-  overflow-x: scroll;
-}
-
-.wrapper-input, .wrapperInput1 {
+.wrapper-input {
 
 display: flex;
 height: 40px;
@@ -263,7 +255,7 @@ background-color: rgb(226, 220, 212);
 
 
 
-.wrap, .wrap1 {
+.wrap{
 
   display: flex;
   flex-direction: column;
@@ -277,7 +269,7 @@ background-color: rgb(226, 220, 212);
   position: relative;
 }
 
-.message.sent, .message.sent1{
+.message.sent{
 
   background: rgb(209, 247, 153);
     font-size: 30px;
@@ -291,7 +283,7 @@ background-color: rgb(226, 220, 212);
 }
 
 
-.message.received, .message.received1{
+.message.received{
 
     background: white;
     font-size: 30px;
