@@ -170,6 +170,9 @@ function init() {
     var input = $('#wrapperInput');
     input.keyup(messagePrinter);
 
+    var input1 = $('#wrapperInput1');
+    input1.keyup(messagePrinter1);
+
 
 
     var input1 = $("input#myInput");
