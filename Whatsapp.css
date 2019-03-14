@@ -313,10 +313,10 @@ background-color: rgb(226, 220, 212);
   display: none;
 }
 
-footer {
+.container > footer {
   position: absolute;
   bottom:  0;
-  left: 15%;
+  left: 210px;
   height: 55px;
   width: 955px;
   margin: auto;
