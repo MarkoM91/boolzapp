@@ -4,6 +4,7 @@ function selectWrapper() {
   meIndex = me.index();
   console.log(meIndex);
 
+
   var wrapperRight = $('.wrapper-right');
   wrapperRight.removeClass("selected");
 
@@ -124,7 +125,8 @@ function init() {
     var input1 = $("input#myInput");
     input1.keyup(search);
 
-    var contactInfo = $(".contact-info");
+
+    var contactInfo = $(".contacts > .contact-info");
     contactInfo.click(selectWrapper);
 
     var message = $(".message")
