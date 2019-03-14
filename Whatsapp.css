@@ -255,7 +255,7 @@ background-color: rgb(226, 220, 212);
   font-size: 30px;
 }
 
-#wrapperInput, #wrapperInput1{
+.wrapperInput{
 
   width: 80%;
   height: 25px;

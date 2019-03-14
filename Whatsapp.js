@@ -2,7 +2,7 @@ function selectWrapper() {
 
   var me = $(this);
   meIndex = me.index();
-  console.log(meIndex);
+
 
 
   var wrapperRight = $('.wrapper-right');
@@ -53,7 +53,7 @@ function txtEnterEvent(e){
 
 function getMessageGreen(sent ,content) {
 
-    var wrapper = $(".wrap");
+
 
     var message = document.createElement("div");
     var messageDetail = document.createElement("small");
@@ -75,46 +75,21 @@ function getMessageGreen(sent ,content) {
       $(message).addClass("received");
     }
 
-  wrapper.append(message);
 
-return wrapper;
+
+return message;
 }
 
-function getMessageGreen1(sent ,content) {
-
-    var wrapper = $(".wrap1");
-
-    var message = document.createElement("div");
-    var messageDetail = document.createElement("small");
-    var messageHour = document.createElement("h6");
-
-    $(messageDetail).text(content);
-    $(messageHour).text("17:30");
-
-    message.append(messageDetail);
-    message.append(messageHour);
-
-    $(message).addClass("message");
-
-    if (sent) {
-
-      $(message).addClass("sent");
-    } else {
-
-      $(message).addClass("received");
-    }
-
-  wrapper.append(message);
-
-return wrapper;
-}
 
 
 
 
 function messagePrinter(e){
+
+
+  console.log("ciao");
     var me = $(this);
-    var activeMessageContainer = $(".wrapper-right-container");
+    var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
 
      if (e.which == 13) {
 
@@ -122,7 +97,7 @@ function messagePrinter(e){
         me.val("");
 
         var htmlMsg = getMessageGreen(true, input);
-        activeMessageContainer.eq().append(htmlMsg);
+        activeMessageContainer.append(htmlMsg);
 
         setTimeout(function() {
 
@@ -148,7 +123,7 @@ function rowCanc() {
 
 function init() {
 
-    var input = $('#wrapperInput');
+    var input = $('.wrapperInput');
     input.keyup(messagePrinter);
 
 
