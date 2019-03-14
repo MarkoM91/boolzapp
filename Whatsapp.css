@@ -42,6 +42,7 @@ header{
 .wrapper-left {
 
 width: 25%;
+height: 582px;
 background-color: rgb(226, 220, 212);
 border: 1px solid rgb(164, 164, 164);
 }
@@ -80,7 +81,7 @@ h5 {
 #r{
 
 position: relative;
-right: 15px;
+right: 25px;
 }
 
 #rr{
@@ -277,7 +278,7 @@ background-color: rgb(226, 220, 212);
 
 .message.sent{
 
-  background: rgb(209, 247, 153);
+    background: rgb(209, 247, 153);
     font-size: 30px;
     width: 40%;
     position: relative;
@@ -314,6 +315,7 @@ background-color: rgb(226, 220, 212);
 }
 
 .container > footer {
+
   position: absolute;
   bottom:  0;
   left: 210px;
