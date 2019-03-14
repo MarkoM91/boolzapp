@@ -247,6 +247,12 @@ background-color: rgb(226, 220, 212);
   font-size: 30px;
 }
 
+.micro{
+
+  margin-left: 25px;
+  font-size: 30px;
+}
+
 .wrapperInput{
 
   width: 80%;
