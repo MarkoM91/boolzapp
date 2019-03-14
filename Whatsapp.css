@@ -323,3 +323,21 @@ background-color: rgb(226, 220, 212);
   width: 955px;
   margin: auto;
 }
+
+.pop-up {
+
+  height: 120px;
+  width: 150px;
+  background: white;
+  position: absolute;
+  z-index: 100;
+  top: 25%;
+  left: 40%;
+  box-shadow: 10px 10px 20px lightgrey;
+
+}
+.pop-up *{
+text-align: center;
+line-height: 60px;
+
+}

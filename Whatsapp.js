@@ -112,7 +112,9 @@ function rowCanc() {
   var me = $(this);
 
 
-  me.remove();
+  me.siblings().toggleClass("active");
+
+  
 
 
 }
@@ -136,7 +138,7 @@ function init() {
 
     var message = $(".message")
 
-    $(document).on("click" , ".message", rowCanc);
+    $(document).on("click" , ".message", rowcanc);
 }
 
 
