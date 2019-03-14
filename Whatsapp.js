@@ -80,6 +80,35 @@ function getMessageGreen(sent ,content) {
 return wrapper;
 }
 
+function getMessageGreen1(sent ,content) {
+
+    var wrapper = $(".wrap1");
+
+    var message = document.createElement("div");
+    var messageDetail = document.createElement("small");
+    var messageHour = document.createElement("h6");
+
+    $(messageDetail).text(content);
+    $(messageHour).text("17:30");
+
+    message.append(messageDetail);
+    message.append(messageHour);
+
+    $(message).addClass("message");
+
+    if (sent) {
+
+      $(message).addClass("sent");
+    } else {
+
+      $(message).addClass("received");
+    }
+
+  wrapper.append(message);
+
+return wrapper;
+}
+
 
 
 
@@ -98,6 +127,27 @@ function messagePrinter(e){
         setTimeout(function() {
 
           htmlMsg = getMessageGreen(false, "ok");
+          activeMessageContainer.append(htmlMsg);
+
+        }, 1000);
+     }
+}
+
+function messagePrinter1(e){
+    var me = $(this);
+    var activeMessageContainer = $(".wrapper-right-container1");
+
+     if (e.which == 13) {
+
+        var input = me.val();
+        me.val("");
+
+        var htmlMsg = getMessageGreen1(true, input);
+        activeMessageContainer.append(htmlMsg);
+
+        setTimeout(function() {
+
+          htmlMsg = getMessageGreen1(false, "ok");
           activeMessageContainer.append(htmlMsg);
 
         }, 1000);
