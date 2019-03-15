@@ -334,10 +334,16 @@ background-color: rgb(226, 220, 212);
   top: 25%;
   left: 40%;
   box-shadow: 10px 10px 20px lightgrey;
+  display: none;
 
 }
 .pop-up *{
 text-align: center;
 line-height: 60px;
 
+}
+
+.active {
+
+  display: block;
 }

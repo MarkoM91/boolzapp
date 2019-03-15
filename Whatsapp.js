@@ -107,14 +107,14 @@ function messagePrinter(e){
 
 
 
-function rowCanc() {
+function popUp() {
 
   var me = $(this);
 
 
   me.siblings().toggleClass("active");
 
-  
+
 
 
 }
@@ -138,7 +138,7 @@ function init() {
 
     var message = $(".message")
 
-    $(document).on("click" , ".message", rowcanc);
+    $(document).on("click" , ".message", popUp);
 }
 
 
