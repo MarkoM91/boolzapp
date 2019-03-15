@@ -118,6 +118,15 @@ function popUp() {
 
 
 }
+function popUp1() {
+
+  var popUp = $(".pop-up");
+  popUp.closest(".message").remove();
+
+
+
+
+}
 
 
 function init() {
@@ -137,8 +146,12 @@ function init() {
     contactInfo.click(selectWrapper);
 
     var message = $(".message")
+    var message1 = $(".message")
 
     $(document).on("click" , ".message", popUp);
+    $(document).on("click" , ".pop-up", popUp1);
+
+
 }
 
 
