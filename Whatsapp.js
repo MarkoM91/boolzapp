@@ -56,6 +56,7 @@ function getMessageGreen(sent ,content) {
     var messageDetail = document.createElement("small");
     var messageHour = document.createElement("h6");
 
+
     $(messageDetail).text(content);
     $(messageHour).text("17:30");
 
@@ -72,19 +73,13 @@ function getMessageGreen(sent ,content) {
       $(message).addClass("received");
     }
 
-
-
 return message;
 }
-
-
-
-
 
 function messagePrinter(e){
 
 
-  console.log("ciao");
+
     var me = $(this);
     var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
 
@@ -95,70 +90,28 @@ function messagePrinter(e){
 
         var htmlMsg = getMessageGreen(true, input);
         activeMessageContainer.append(htmlMsg);
+        
 
         setTimeout(function() {
 
           htmlMsg = getMessageGreen(false, "ok");
           activeMessageContainer.append(htmlMsg);
 
+
         }, 1000);
      }
 }
-
-
-
-function popUp() {
-
-  var me = $(this);
-
-
-  me.siblings().toggleClass("active");
-
-
-
-
-}
-function popUp1() {
-
-  var popUp = $(".pop-up");
-  popUp.closest(".message").remove();
-
-
-
-
-}
-
 
 function init() {
 
     var input = $('.wrapperInput');
     input.keyup(messagePrinter);
 
-
-
-
-
     var input1 = $("input#myInput");
     input1.keyup(search);
 
-
     var contactInfo = $(".contacts > .contact-info");
     contactInfo.click(selectWrapper);
-
-    var message = $(".message")
-    var message1 = $(".message")
-
-    $(document).on("click" , ".message", popUp);
-    $(document).on("click" , ".pop-up", popUp1);
-
-
 }
-
-
-
-
-
-
-
 
 $(document).ready(init);
