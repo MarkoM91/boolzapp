@@ -330,3 +330,24 @@ background-color: rgb(226, 220, 212);
 
   display: block;
 }
+
+.pop-up{
+  position: absolute;
+  top: 30px;
+  right: 0;
+  background: white;
+  box-shadow: 10px 10px 10px lightgrey;
+  z-index: 100;
+}
+
+.pop-up-element, .deleteMsg{
+  padding:  10px;
+  text-align: left;
+}
+.pop-up-element a, .deleteMsg a{
+  text-decoration: none;
+  color: rgb(164, 164, 164);
+  font-size: 18px;
+}
+
+.
