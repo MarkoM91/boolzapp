@@ -103,11 +103,13 @@ function messagePrinter(e){
 }
 
 function showMessage() {
-  var popUp = $(this).find(".pop-up");
-  popUp.show();
+
+  var me = $(this);
+  me.find(".pop-up").show();
 }
 
 function deleteMessage() {
+  
   var me = $(this);
   me.closest(".message").remove();
 
