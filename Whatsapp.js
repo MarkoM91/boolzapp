@@ -108,8 +108,9 @@ function showMessage() {
 }
 
 function deleteMessage() {
-  var popUp = $(".pop-up");
-  popUp.show();
+  var me = $(this);
+  me.closest(".message").remove();
+
 
 }
 
@@ -127,6 +128,8 @@ function init() {
 
     var message = $(".message");
     $(document).on("click" , ".message" , showMessage);
+    var deleteMsg = $(".deleteMsg");
+    $(document).on("click" , ".deleteMsg" , deleteMessage);
 }
 
 $(document).ready(init);
