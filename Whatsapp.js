@@ -55,15 +55,31 @@ function getMessageGreen(sent ,content) {
     var message = document.createElement("div");
     var messageDetail = document.createElement("small");
     var messageHour = document.createElement("h6");
+    var popUp = document.createElement("div");
+    var popUpElement = document.createElement("div");
+    var a = document.createElement("a");
+    var deleteMsg = document.createElement("div");
+    var a1 = document.createElement("a");
 
 
     $(messageDetail).text(content);
     $(messageHour).text("17:30");
+    $(a).text("Info Message");
+    $(a1).text("Delete message");
 
     message.append(messageDetail);
     message.append(messageHour);
+    message.append(popUp);
+    popUpElement.append(a);
+    deleteMsg.append(a1);
+    popUp.append(popUpElement);
+    popUp.append(deleteMsg);
+
 
     $(message).addClass("message");
+    $(popUp).addClass("pop-up");
+    $(popUpElement).addClass("pop-up-element");
+    $(deleteMsg).addClass("deleteMsg");
 
     if (sent) {
 
