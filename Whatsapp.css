@@ -41,13 +41,11 @@ header{
 
 .wrapper-left {
 
-width: 25%;
-height: 582px;
-background-color: rgb(226, 220, 212);
-border: 1px solid rgb(164, 164, 164);
+  width: 25%;
+  height: 582px;
+  background-color: rgb(226, 220, 212);
+  border: 1px solid rgb(164, 164, 164);
 }
-
-
 
 .contact-info{
 
@@ -59,6 +57,7 @@ border: 1px solid rgb(164, 164, 164);
   border-bottom: 1px solid rgb(164, 164, 164);
   text-align: left;
 }
+
 .first{
 
   height: 50px;
@@ -78,70 +77,72 @@ h5 {
   color: black;
 }
 
-#r{
+#r {
 
-position: relative;
-right: 25px;
+  position: relative;
+  right: 25px;
 }
 
-#rr{
+#rr {
 
-position: relative;
-right: 10px;
+  position: relative;
+  right: 10px;
 }
 
-.contact-info div{
-
-  margin: 15px;
-}
-.first div{
+.contact-info div {
 
   margin: 15px;
 }
 
-.contact-info img{
+.first div {
 
-width: 30px;
-height: 30px;
-border-radius: 50%;
-}
-.first img{
-
-width: 30px;
-height: 30px;
-border-radius: 50%;
+  margin: 15px;
 }
 
-.user-info img{
+.contact-info img {
 
-width: 40px;
-height: 40px;
-border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.first img {
+
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.user-info img {
+
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
 }
 
 .icons  {
 
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icons i {
 
-margin: 0 4px;
+  margin: 0 4px;
 }
 
 .icons1  {
 
-display: flex;
-justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .icons1 i {
 
-margin: 0 4px;
+  margin: 0 4px;
 }
 
-.status{
+.status {
 
   height: 50px;
   width: 100%;;
@@ -151,13 +152,13 @@ margin: 0 4px;
   align-items: center;
 }
 
-.status div{
+.status div {
 
   margin: 10px;
   font-size: 12px;
 }
 
-div.s-icon{
+div.s-icon {
 
   height:30px;
   width: 30px;
@@ -167,7 +168,8 @@ div.s-icon{
 
 }
 
-.fa-bell-slash{
+.fa-bell-slash {
+
   text-align: center;
   color: rgb(168, 217, 250);
   margin: 8px;
@@ -175,11 +177,11 @@ div.s-icon{
 
 .input {
 
-display: flex;
-height: 40px;
-justify-content: center;
-align-items: center;
-border-bottom: 1px solid rgb(164, 164, 164);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid rgb(164, 164, 164);
 }
 
 #myInput {
@@ -187,6 +189,7 @@ border-bottom: 1px solid rgb(164, 164, 164);
   width: 70%;
   height: 25px;
 }
+
 #myBtn {
 
   width: 30px;
@@ -208,18 +211,17 @@ border-bottom: 1px solid rgb(164, 164, 164);
 .wrapper-right.selected {
 
   display: block;
-
 }
 
-.user-info{
+.user-info {
 
-display: flex;
-justify-content: space-between;
-align-items: center;
-height: 50px;
-padding: 10px;
-background-color: rgb(226, 220, 212);
-border-bottom: 1px solid rgb(164, 164, 164);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 10px;
+  background-color: rgb(226, 220, 212);
+  border-bottom: 1px solid rgb(164, 164, 164);
 }
 
 .wrapper-right-container {
@@ -235,26 +237,26 @@ border-bottom: 1px solid rgb(164, 164, 164);
 
 .wrapper-input {
 
-display: flex;
-height: 40px;
-justify-content: center;
-align-items: center;
-background-color: rgb(226, 220, 212);
+  display: flex;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(226, 220, 212);
 }
 
-.smile{
+.smile {
 
   margin-right: 25px;
   font-size: 30px;
 }
 
-.micro{
+.micro {
 
   margin-left: 25px;
   font-size: 30px;
 }
 
-.wrapperInput{
+.wrapperInput {
 
   width: 80%;
   height: 100%;
@@ -262,7 +264,7 @@ background-color: rgb(226, 220, 212);
 
 
 
-.wrap{
+.wrap {
 
   display: flex;
   flex-direction: column;
@@ -276,7 +278,7 @@ background-color: rgb(226, 220, 212);
   position: relative;
 }
 
-.message.sent{
+.message.sent {
 
     background: rgb(209, 247, 153);
     font-size: 30px;
@@ -290,7 +292,7 @@ background-color: rgb(226, 220, 212);
 }
 
 
-.message.received{
+.message.received {
 
     background: white;
     font-size: 30px;
@@ -331,7 +333,7 @@ background-color: rgb(226, 220, 212);
   display: block;
 }
 
-.pop-up{
+.pop-up {
   position: absolute;
   top: 30px;
   right: 0;
@@ -341,11 +343,14 @@ background-color: rgb(226, 220, 212);
   display: none;
 }
 
-.pop-up-element, .deleteMsg{
+.pop-up-element, .deleteMsg {
+
   padding:  10px;
   text-align: left;
 }
-.pop-up-element a, .deleteMsg a{
+
+.pop-up-element a, .deleteMsg a {
+
   text-decoration: none;
   color: rgb(164, 164, 164);
   font-size: 18px;
