@@ -338,6 +338,7 @@ background-color: rgb(226, 220, 212);
   background: white;
   box-shadow: 10px 10px 10px lightgrey;
   z-index: 100;
+  display: none;
 }
 
 .pop-up-element, .deleteMsg{

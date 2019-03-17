@@ -90,7 +90,7 @@ function messagePrinter(e){
 
         var htmlMsg = getMessageGreen(true, input);
         activeMessageContainer.append(htmlMsg);
-        
+
 
         setTimeout(function() {
 
@@ -100,6 +100,17 @@ function messagePrinter(e){
 
         }, 1000);
      }
+}
+
+function showMessage() {
+  var popUp = $(this).find(".pop-up");
+  popUp.show();
+}
+
+function deleteMessage() {
+  var popUp = $(".pop-up");
+  popUp.show();
+
 }
 
 function init() {
@@ -112,6 +123,10 @@ function init() {
 
     var contactInfo = $(".contacts > .contact-info");
     contactInfo.click(selectWrapper);
+
+
+    var message = $(".message");
+    $(document).on("click" , ".message" , showMessage);
 }
 
 $(document).ready(init);
