@@ -109,11 +109,9 @@ function showMessage() {
 }
 
 function deleteMessage() {
-  
+
   var me = $(this);
   me.closest(".message").remove();
-
-
 }
 
 function init() {
@@ -126,7 +124,6 @@ function init() {
 
     var contactInfo = $(".contacts > .contact-info");
     contactInfo.click(selectWrapper);
-
 
     var message = $(".message");
     $(document).on("click" , ".message" , showMessage);
