@@ -99,10 +99,7 @@ function automaticMessage() {
 
       if (data.success) {
 
-        var rndSentence = data.response
-        var message = getMessageGreen(false, rndSentence);
-        var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
-        activeMessageContainer.append(message);
+        ajaxMsg(data.response);
       }
     },
     error: function (request, state, error) {
@@ -113,6 +110,13 @@ function automaticMessage() {
     }
   });
 
+}
+
+function ajaxMsg(rndSentence) {
+
+  var message = getMessageGreen(false, rndSentence);
+  var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
+  activeMessageContainer.append(message);
 }
 
 function messagePrinter(e){
@@ -130,12 +134,9 @@ function messagePrinter(e){
         var htmlMsg = getMessageGreen(true, input);
         activeMessageContainer.append(htmlMsg);
 
-
         setTimeout(automaticMessage, 3000);
      }
 }
-
-
 
 function showMessage() {
 
@@ -148,6 +149,7 @@ function deleteMessage() {
   var me = $(this);
   me.closest(".message").remove();
 }
+
 
 function init() {
 
