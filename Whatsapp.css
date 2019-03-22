@@ -305,7 +305,7 @@ div.s-icon {
 }
 
 .message h6 {
-
+  padding-top: 15px;
   position: absolute;
   bottom: 0;
   right: 0;
