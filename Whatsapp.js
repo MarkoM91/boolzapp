@@ -3,8 +3,6 @@ function selectWrapper() {
   var me = $(this);
   meIndex = me.index();
 
-
-
   var wrapperRight = $('.wrapper-right');
   wrapperRight.removeClass("selected");
 
@@ -92,6 +90,31 @@ function getMessageGreen(sent ,content) {
 return message;
 }
 
+function automaticMessage() {
+
+  $.ajax({
+    url:"https://www.boolean.careers/api/random/sentence",
+    method: "GET",
+    success: function(data, state) {
+
+      if (data.success) {
+
+        var rndSentence = data.response
+        var message = getMessageGreen(false, rndSentence);
+        var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
+        activeMessageContainer.append(message);
+      }
+    },
+    error: function (request, state, error) {
+
+      console.log("request" , date);
+      console.log("state" , state);
+      console.log("date" , error);
+    }
+  });
+
+}
+
 function messagePrinter(e){
 
 
@@ -110,13 +133,13 @@ function messagePrinter(e){
 
         setTimeout(function() {
 
-          htmlMsg = getMessageGreen(false, "ok");
-          activeMessageContainer.append(htmlMsg);
+          automaticMessage();
 
-
-        }, 1000);
+        }, 3000);
      }
 }
+
+
 
 function showMessage() {
 
