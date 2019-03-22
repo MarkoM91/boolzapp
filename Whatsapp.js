@@ -27,13 +27,11 @@ function search() {
 
        var contactInfoContent = txt.eq(i).text().toLowerCase();
 
-
         if (!contactInfoContent.includes(content)) {
 
           contactInfolength.addClass("hidden");
         }
     }
-
 }
 
 
@@ -45,42 +43,25 @@ function txtEnterEvent(e){
 }
 
 
-function getMessageGreen(sent ,content) {
+function getMessage(sent, content) {
 
-    var message = document.createElement("div");
-    var messageDetail = document.createElement("small");
-    var messageHour = document.createElement("h6");
-    var popUp = document.createElement("div");
-    var popUpElement = document.createElement("div");
-    var a = document.createElement("a");
-    var deleteMsg = document.createElement("div");
-    var a1 = document.createElement("a");
+  var data = {
 
-    $(messageDetail).text(content);
-    $(messageHour).text("17:30");
-    $(a).text("Info Message");
-    $(a1).text("Delete message");
-
-    message.append(messageDetail);
-    message.append(messageHour);
-    message.append(popUp);
-    popUpElement.append(a);
-    deleteMsg.append(a1);
-    popUp.append(popUpElement);
-    popUp.append(deleteMsg);
-
-    $(message).addClass("message");
-    $(popUp).addClass("pop-up");
-    $(popUpElement).addClass("pop-up-element");
-    $(deleteMsg).addClass("deleteMsg");
+    testo: content,
+    ora : "17.30"
+  }
 
     if (sent) {
 
-      $(message).addClass("sent");
+      data.class = "sent";
     } else {
 
-      $(message).addClass("received");
+      data.class = "received";
     }
+
+    var template = $("#box-template").html();
+    var compiled = Handlebars.compile(template);
+    var message = compiled(data);
 
 return message;
 }
@@ -111,7 +92,7 @@ function automaticResponse() {
 
 function ajaxMsg(rndSentence) {
 
-  var message = getMessageGreen(false, rndSentence);
+  var message = getMessage(false, rndSentence);
   var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
   activeMessageContainer.append(message);
 }
@@ -119,19 +100,19 @@ function ajaxMsg(rndSentence) {
 
 function messagePrinter(e){
 
-    var me = $(this);
-    var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
+  var me = $(this);
+  var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
 
-     if (e.which == 13) {
+  if (e.which == 13) {
 
-        var input = me.val();
-        me.val("");
+     var input = me.val();
+     me.val("");
 
-        var htmlMsg = getMessageGreen(true, input);
-        activeMessageContainer.append(htmlMsg);
+     var htmlMsg = getMessage(true, input);
+     activeMessageContainer.append(htmlMsg);
 
-        setTimeout(automaticResponse, 3000);
-     }
+     setTimeout(automaticResponse, 3000);
+  }
 }
 
 
@@ -140,6 +121,7 @@ function showMessage() {
   var me = $(this);
   me.find(".pop-up").show();
 }
+
 
 function deleteMessage() {
 
@@ -150,19 +132,20 @@ function deleteMessage() {
 
 function init() {
 
-    var input = $('.wrapperInput');
-    input.keyup(messagePrinter);
+  var input = $('.wrapperInput');
+  input.keyup(messagePrinter);
 
-    var input1 = $("input#myInput");
-    input1.keyup(search);
+  var input1 = $("input#myInput");
+  input1.keyup(search);
 
-    var contactInfo = $(".contacts > .contact-info");
-    contactInfo.click(selectWrapper);
+  var contactInfo = $(".contacts > .contact-info");
+  contactInfo.click(selectWrapper);
 
-    var message = $(".message");
-    $(document).on("click" , ".message" , showMessage);
-    var deleteMsg = $(".deleteMsg");
-    $(document).on("click" , ".deleteMsg" , deleteMessage);
+  var message = $(".message");
+  $(document).on("click" , ".message" , showMessage);
+
+  var deleteMsg = $(".deleteMsg");
+  $(document).on("click" , ".deleteMsg" , deleteMessage);
 }
 
 $(document).ready(init);
