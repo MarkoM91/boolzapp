@@ -131,11 +131,7 @@ function messagePrinter(e){
         activeMessageContainer.append(htmlMsg);
 
 
-        setTimeout(function() {
-
-          automaticMessage();
-
-        }, 3000);
+        setTimeout(automaticMessage, 3000);
      }
 }
 
