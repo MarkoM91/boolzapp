@@ -8,9 +8,8 @@ function selectWrapper() {
 
   var selectedWrapper = wrapperRight.eq(meIndex);
   $(selectedWrapper).addClass("selected");
-
-
 }
+
 
 function search() {
 
@@ -38,7 +37,6 @@ function search() {
 }
 
 
-
 function txtEnterEvent(e){
     var keyPress = e.which;
     if (keyPress == 13) {
@@ -46,9 +44,8 @@ function txtEnterEvent(e){
     }
 }
 
+
 function getMessageGreen(sent ,content) {
-
-
 
     var message = document.createElement("div");
     var messageDetail = document.createElement("small");
@@ -58,7 +55,6 @@ function getMessageGreen(sent ,content) {
     var a = document.createElement("a");
     var deleteMsg = document.createElement("div");
     var a1 = document.createElement("a");
-
 
     $(messageDetail).text(content);
     $(messageHour).text("17:30");
@@ -72,7 +68,6 @@ function getMessageGreen(sent ,content) {
     deleteMsg.append(a1);
     popUp.append(popUpElement);
     popUp.append(deleteMsg);
-
 
     $(message).addClass("message");
     $(popUp).addClass("pop-up");
@@ -90,7 +85,8 @@ function getMessageGreen(sent ,content) {
 return message;
 }
 
-function automaticMessage() {
+
+function automaticResponse() {
 
   $.ajax({
     url:"https://www.boolean.careers/api/random/sentence",
@@ -112,6 +108,7 @@ function automaticMessage() {
 
 }
 
+
 function ajaxMsg(rndSentence) {
 
   var message = getMessageGreen(false, rndSentence);
@@ -119,9 +116,8 @@ function ajaxMsg(rndSentence) {
   activeMessageContainer.append(message);
 }
 
+
 function messagePrinter(e){
-
-
 
     var me = $(this);
     var activeMessageContainer = $(" .wrapper-right.selected .wrapper-right-container");
@@ -134,9 +130,10 @@ function messagePrinter(e){
         var htmlMsg = getMessageGreen(true, input);
         activeMessageContainer.append(htmlMsg);
 
-        setTimeout(automaticMessage, 3000);
+        setTimeout(automaticResponse, 3000);
      }
 }
+
 
 function showMessage() {
 
