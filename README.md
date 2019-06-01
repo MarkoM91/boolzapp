@@ -1,6 +1,6 @@
 # boolzapp
 
-boolzapp is a Clone of Whatsapp
+boolzapp is a Whatsapp Web Front-End Clone.
 
 ## Technology Used 
 
