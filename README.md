@@ -7,3 +7,6 @@ boolzapp is a Whatsapp Web Front-End Clone.
 HTML/CSS/Javascript/JQuery/Ajax
 
 ## Project Screenshots
+
+ 
+ ![](boolzapp.png)
