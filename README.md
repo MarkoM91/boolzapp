@@ -9,4 +9,6 @@ HTML/CSS/Javascript/JQuery/Ajax
 ## Project Screenshots
 
  
+ ![](boolzapp.png)
+ 
  ![](boolzapp2.png)
